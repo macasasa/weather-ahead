@@ -1,8 +1,8 @@
-# WeatherAhead
+# Weather Ahead
 
 **The weather for everywhere you're going.**
 
-WeatherAhead reads your Apple Calendar and turns it into a weather timeline. Every event with a location — a hotel booking synced to your calendar, a trip, a meetup — becomes a stop on a single scrollable list: day by day, place by place, with the forecast for each.
+Weather Ahead reads your Apple Calendar and turns it into a weather timeline. Every event with a location — a hotel booking synced to your calendar, a trip, a meetup — becomes a stop on a single scrollable list: day by day, place by place, with the forecast for each.
 
 - **One timeline.** Days are sections; places are rows on condition-tinted Liquid Glass cards showing city, country, condition, temperature and H/L. Leave Espoo and arrive in Joensuu on the same day? That day shows both, each with its own weather.
 - **Today, anchored.** The timeline opens on today, which always starts with the weather at your current location. Scroll far away and a floating button brings you back.
@@ -39,7 +39,7 @@ There are no API keys and no third-party dependencies — but WeatherKit is tied
 
 2. **Enable WeatherKit for that App ID.** WeatherKit needs a paid Apple Developer membership: register the identifier at [developer.apple.com](https://developer.apple.com/account/resources/identifiers) with the WeatherKit capability ticked, then enable WeatherKit for the same App ID in App Store Connect. It can take up to ~30 minutes to activate.
 
-3. Open `WeatherAhead_iOS.xcodeproj` and run.
+3. Open `WeatherAhead.xcodeproj` and run.
 
 Without a WeatherKit-enabled App ID the app still builds and runs — the timeline, calendar events, places and permissions all work — but every row shows "No weather data".
 
@@ -61,10 +61,10 @@ EventKit events (today … +365 d, with locations)
 
 | Piece | Where |
 |---|---|
-| Services (calendar, geocoding, weather, location) | `WeatherAhead_iOS/Services/` |
-| Timeline UI + detail view | `WeatherAhead_iOS/Timeline/` |
-| Onboarding & permission screens | `WeatherAhead_iOS/Onboarding/` |
-| The one store | `WeatherAhead_iOS/TimelineStore.swift` |
+| Services (calendar, geocoding, weather, location) | `WeatherAhead/Services/` |
+| Timeline UI + detail view | `WeatherAhead/Timeline/` |
+| Onboarding & permission screens | `WeatherAhead/Onboarding/` |
+| The one store | `WeatherAhead/TimelineStore.swift` |
 
 ## Debugging
 

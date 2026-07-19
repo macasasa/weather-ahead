@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "000000000000000100000000"
-               BuildableName = "WeatherAhead_iOS.app"
-               BlueprintName = "WeatherAhead_iOS"
-               ReferencedContainer = "container:WeatherAhead_iOS.xcodeproj">
+               BuildableName = "WeatherAhead.app"
+               BlueprintName = "WeatherAhead"
+               ReferencedContainer = "container:WeatherAhead.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "000000000000000100000000"
-            BuildableName = "WeatherAhead_iOS.app"
-            BlueprintName = "WeatherAhead_iOS"
-            ReferencedContainer = "container:WeatherAhead_iOS.xcodeproj">
+            BuildableName = "WeatherAhead.app"
+            BlueprintName = "WeatherAhead"
+            ReferencedContainer = "container:WeatherAhead.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "000000000000000100000000"
-            BuildableName = "WeatherAhead_iOS.app"
-            BlueprintName = "WeatherAhead_iOS"
-            ReferencedContainer = "container:WeatherAhead_iOS.xcodeproj">
+            BuildableName = "WeatherAhead.app"
+            BlueprintName = "WeatherAhead"
+            ReferencedContainer = "container:WeatherAhead.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
