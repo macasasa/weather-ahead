@@ -1,0 +1,25 @@
+// Weather Ahead — local signing settings
+//
+// Copy this file to `Config/Local.xcconfig` (which is gitignored) and fill in
+// your own values. Xcode reads it automatically as the project's base
+// configuration, so you never have to edit the project file.
+//
+//     cp Config/Local.xcconfig.example Config/Local.xcconfig
+//
+// DEVELOPMENT_TEAM
+//   Your 10-character Apple Developer Team ID. Find it at
+//   https://developer.apple.com/account under Membership details, or in
+//   Xcode → Settings → Accounts.
+//
+// PRODUCT_BUNDLE_IDENTIFIER
+//   Must be a bundle id *you* own, because WeatherKit is authorised per App ID.
+//   Register it at https://developer.apple.com/account/resources/identifiers
+//   and tick the WeatherKit capability, then enable WeatherKit for the same
+//   App ID in App Store Connect. Allow up to ~30 minutes for it to activate.
+//
+// Without a WeatherKit-enabled App ID the app still builds and runs — the
+// timeline, places and permissions all work — but every row will show
+// "No weather data".
+
+DEVELOPMENT_TEAM =
+PRODUCT_BUNDLE_IDENTIFIER = com.example.weatherahead

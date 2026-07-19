@@ -1,0 +1,17 @@
+// Weather Ahead — base build configuration (committed).
+//
+// Defaults live here so a fresh clone builds without any extra setup. Your
+// personal signing settings go in `Local.xcconfig`, which is gitignored and
+// optionally included below — values there override these defaults.
+//
+//     cp Config/Local.xcconfig.example Config/Local.xcconfig
+//
+// See Local.xcconfig.example for how to get a Team ID and a WeatherKit-enabled
+// App ID.
+
+DEVELOPMENT_TEAM =
+PRODUCT_BUNDLE_IDENTIFIER = com.example.weatherahead
+
+// Optional: absent on a fresh clone, and that's fine — `#include?` does not
+// fail when the file is missing.
+#include? "Local.xcconfig"

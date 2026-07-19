@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+
+# Xcode — user-specific state (usernames, window layout, breakpoints)
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+
+# Build output
+build/
+DerivedData/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Packages/
+
+# Signing identity — each contributor supplies their own.
+# Copy Config/Local.xcconfig.example to Config/Local.xcconfig.
+Config/Local.xcconfig
+
+# Signing material should never be committed
+*.mobileprovision
+*.p12
+*.cer
+*.certSigningRequest
+
+# Claude Code personal settings (shared settings live in .claude/settings.json)
+.claude/settings.local.json
