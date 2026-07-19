@@ -122,7 +122,7 @@ struct HowItWorksView: View {
                        detail: String(localized: "Every calendar event with a location — trips, bookings, meetups — becomes a stop on your timeline."))
             featureRow(systemImage: "cloud.sun.rain",
                        title: String(localized: "Shows the weather there"),
-                       detail: String(localized: "Apple Weather forecasts for upcoming stops, and the recorded weather for places you've been."))
+                       detail: String(localized: "Apple Weather forecasts for the next 10 days, and the typical climate for trips further ahead."))
             featureRow(systemImage: "lock",
                        title: String(localized: "Everything stays on your device"),
                        detail: String(localized: "No account, no servers, no tracking. The app is open source, so you can verify it."))
