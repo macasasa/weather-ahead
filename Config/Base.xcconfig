@@ -9,8 +9,15 @@
 // See Local.xcconfig.example for how to get a Team ID and a WeatherKit-enabled
 // App ID.
 
+// Left empty on purpose: Xcode Cloud injects the team from its App Store
+// Connect context, and locally it comes from Local.xcconfig.
 DEVELOPMENT_TEAM =
-PRODUCT_BUNDLE_IDENTIFIER = com.example.weatherahead
+
+// The shipping bundle id. It lives here rather than in Local.xcconfig so that
+// Xcode Cloud — which only ever sees committed files — signs the App Store
+// build correctly. A bundle id is a public identifier, not a secret.
+// Building for your own device? Override it in Local.xcconfig.
+PRODUCT_BUNDLE_IDENTIFIER = com.nikolayukolov.weatherahead
 
 // Optional: absent on a fresh clone, and that's fine — `#include?` does not
 // fail when the file is missing.

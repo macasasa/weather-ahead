@@ -37,6 +37,8 @@ There are no API keys and no third-party dependencies — but WeatherKit is tied
 
    Set `DEVELOPMENT_TEAM` to your 10-character Team ID (Xcode → Settings → Accounts) and `PRODUCT_BUNDLE_IDENTIFIER` to a bundle id you own. `Local.xcconfig` is gitignored, so your identifiers stay out of the repo.
 
+   `Config/Base.xcconfig` carries the shipping app's bundle id so that CI can sign release builds. It is only a default — anything you put in `Local.xcconfig` overrides it. Running in the simulator needs no signing and works without this step; building to a **device** requires a bundle id you own, so create `Local.xcconfig` first.
+
 2. **Enable WeatherKit for that App ID.** WeatherKit needs a paid Apple Developer membership: register the identifier at [developer.apple.com](https://developer.apple.com/account/resources/identifiers) with the WeatherKit capability ticked, then enable WeatherKit for the same App ID in App Store Connect. It can take up to ~30 minutes to activate.
 
 3. Open `WeatherAhead.xcodeproj` and run.
