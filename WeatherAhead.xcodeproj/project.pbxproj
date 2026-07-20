@@ -271,7 +271,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Weather Ahead";
-				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "WeatherAhead reads your calendar events to find the places and dates you'll be at, so it can show you the weather for each of them. Events never leave your device.";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Weather Ahead reads your calendar events to find the places and dates you'll be at, so it can show you the weather for each of them. Events never leave your device.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Weather Ahead uses your current location to show today's weather where you are right now. Your location never leaves your device.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -298,7 +298,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 26;
 			};
 			name = Debug;
@@ -315,7 +315,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Weather Ahead";
-				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "WeatherAhead reads your calendar events to find the places and dates you'll be at, so it can show you the weather for each of them. Events never leave your device.";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Weather Ahead reads your calendar events to find the places and dates you'll be at, so it can show you the weather for each of them. Events never leave your device.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Weather Ahead uses your current location to show today's weather where you are right now. Your location never leaves your device.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -342,7 +342,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 26;
 			};
 			name = Release;

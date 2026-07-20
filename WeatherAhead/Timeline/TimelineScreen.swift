@@ -8,13 +8,14 @@ struct TimelineScreen: View {
     @State private var scrollPosition = ScrollPosition(idType: Date.self)
     @State private var todayVisible = true
     @State private var showingSettings = false
+    @State private var path = NavigationPath()
 
     private var today: Date {
         Calendar.current.startOfDay(for: .now)
     }
 
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             ScrollView {
                 GlassEffectContainer(spacing: 14) {
                     LazyVStack(alignment: .leading, spacing: 26) {
@@ -71,6 +72,12 @@ struct TimelineScreen: View {
             .sheet(isPresented: $showingSettings) {
                 SettingsView(store: store)
             }
+            #if DEBUG
+            .task(id: store.sections.count + store.laterGroups.count) {
+                await ScreenshotStaging.stage(store: store, path: $path,
+                                              scrollPosition: $scrollPosition)
+            }
+            #endif
         }
     }
 
