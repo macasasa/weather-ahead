@@ -271,6 +271,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Weather Ahead";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Weather Ahead reads your calendar events to find the places and dates you'll be at, so it can show you the weather for each of them. Events never leave your device.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Weather Ahead uses your current location to show today's weather where you are right now. Your location never leaves your device.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -315,6 +316,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Weather Ahead";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Weather Ahead reads your calendar events to find the places and dates you'll be at, so it can show you the weather for each of them. Events never leave your device.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Weather Ahead uses your current location to show today's weather where you are right now. Your location never leaves your device.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
