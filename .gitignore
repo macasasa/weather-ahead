@@ -30,6 +30,10 @@ Config/Local.xcconfig
 *.p12
 *.cer
 *.certSigningRequest
+*.p8
+
+# App Store Connect CLI working dir (pulled metadata, downloaded review attachments)
+.asc/
 
 # Claude Code personal settings (shared settings live in .claude/settings.json)
 .claude/settings.local.json
