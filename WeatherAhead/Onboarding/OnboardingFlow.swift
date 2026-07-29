@@ -26,7 +26,7 @@ struct OnboardingFlow: View {
                         message: String(localized: "Weather Ahead needs full access to your calendar to read the dates and locations of your events. That's the whole magic: your bookings and plans become a weather timeline.\n\nYour events are read on this device only and are never sent anywhere.")
                     )
                 } button: {
-                    Button("Allow Calendar Access") {
+                    Button("Continue") {
                         Task {
                             _ = await store.calendarService.requestFullAccess()
                             step = 2
@@ -38,19 +38,18 @@ struct OnboardingFlow: View {
                     PermissionExplanation(
                         systemImage: "location",
                         title: String(localized: "Weather where you are"),
-                        message: String(localized: "With location access, today's section always starts with the weather at your current place — even on days with no plans.\n\nYour location stays on this device. You can skip this; the timeline works without it.")
+                        message: String(localized: "With location access, today's section always starts with the weather at your current place — even on days with no plans.\n\nYour location stays on this device, and the timeline works with or without it — the next screen lets you choose.")
                     )
                 } button: {
-                    VStack(spacing: 10) {
-                        Button("Allow Location Access") {
-                            Task {
-                                _ = await store.locationService.requestAuthorization()
-                                onFinished()
-                            }
+                    // Apple 5.1.1(iv): a custom pre-permission screen must always
+                    // proceed to the system prompt — no button that suppresses it,
+                    // and neutral wording ("Continue", not "Allow…"). Location stays
+                    // optional: the user declines at the system prompt if they want.
+                    Button("Continue") {
+                        Task {
+                            _ = await store.locationService.requestAuthorization()
+                            onFinished()
                         }
-                        Button("Not Now") { onFinished() }
-                            .buttonStyle(.plain)
-                            .foregroundStyle(.secondary)
                     }
                 }
             }
