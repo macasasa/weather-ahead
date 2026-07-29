@@ -73,18 +73,17 @@ the date approaches. Never present a climate normal as a forecast — that disti
 
 No camera, no contacts, no ATT.
 
+<!-- Live release status lives in Claude's memory, not here — a committed public doc goes stale
+     the moment it's written. Check `asc status --app 6792811995` for the current state. -->
+
 ## Gotchas
 
-- **Project-level `*_DEPLOYMENT_TARGET` is `27.0`** (an unreleased iOS) while the app target
-  overrides with `26`. Builds work because of that override, but a **new target added without one
-  will inherit 27.0 and fail** against the 26.x SDK. Lower the project-level values if you touch them.
 - **The core feature is invisible without data.** On a device with no location-tagged calendar
-  events the timeline is near-empty by design. This caused an App Review *Guideline 2.1 — Information
-  Needed* request; the answer is a demo recording plus `Support/DemoSeeder`.
+  events the timeline is near-empty by design. This drew an App Review *Guideline 2.1 — Information
+  Needed* request; the answer is a demo recording plus `Support/DemoSeeder`, not a code change.
+- **Permission priming must stay Apple-compliant (Guideline 5.1.1(iv)).** A custom screen before a
+  system permission prompt must use a **neutral button** ("Continue"/"Next", never "Allow …") and
+  must **always proceed to the system prompt** — no "Not Now" that suppresses it. Location stays
+  optional via the OS "Don't Allow", not a custom skip. A "Not Now" + "Allow Location Access" pair
+  in onboarding got 1.0 rejected once (fixed in `Onboarding/OnboardingFlow.swift`).
 - The repo is public — no secrets, no personal data, no internal URLs in commits.
-
-## Current state (2026-07-25)
-
-Version 1.0, build 5, `WAITING_FOR_REVIEW`. A Guideline 2.1 information request was answered on
-Jul 22 with a screen recording and sample `.ics`; App Review Notes carry the full explanation.
-The red flag in App Store Connect marks that message thread, not a defect.
