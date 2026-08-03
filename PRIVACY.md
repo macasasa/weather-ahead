@@ -29,7 +29,7 @@ Weather results, resolved coordinates and place names are cached in the app's ow
 
 ## Verifying this
 
-The app is open source under the MIT licence. Every network call it makes is in [`WeatherAhead/Services/`](WeatherAhead/Services/) — you're welcome to read it, or watch the requests yourself with the logging described in the [README](README.md#debugging).
+The app is open source under the GPL-3.0 licence. Every network call it makes is in [`WeatherAhead/Services/`](WeatherAhead/Services/) — you're welcome to read it, or watch the requests yourself with the logging described in the [README](README.md#debugging).
 
 ## Contact
 

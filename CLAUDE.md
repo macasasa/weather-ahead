@@ -10,7 +10,7 @@ on that date.
 WeatherKit. That's a deliberate product property — don't add a server without a real reason.
 
 - App Store ID **6792811995** · bundle `com.nikolayukolov.weatherahead`
-- **Public repo**, MIT licensed → assume every commit is world-readable
+- **Public repo**, GPL-3.0 licensed → assume every commit is world-readable
 - SwiftUI, iOS 26+, Swift Charts, Liquid Glass
 
 ## Build
