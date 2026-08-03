@@ -91,7 +91,7 @@ Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for how to 
 
 ## Licence
 
-MIT — see [LICENSE](LICENSE). Weather data is provided by Apple Weather.
+GPL-3.0 — see [LICENSE](LICENSE). Copyright © 2026 Nikolai Ukolov. Weather data is provided by Apple Weather.
 
 ## Roadmap
 

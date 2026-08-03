@@ -26,6 +26,10 @@ Describe the **user-visible change** first — what's different when you open th
 
 If you're planning something large, open an issue first so we can agree on the approach before you spend time on it.
 
+## Licensing of contributions
+
+Weather Ahead is GPL-3.0 and is also distributed on the App Store by the project's copyright holder. Apple's store terms conflict with the GPL for *licensees*, so this dual distribution only works if the maintainer remains the sole copyright holder. By opening a pull request you agree to assign copyright of your contribution to the project maintainer (or to license it under terms permitting App Store distribution). If you're not comfortable with that, please open an issue instead of a PR — bug reports and ideas are just as valuable.
+
 ## Reporting bugs
 
 Weather issues are much easier to diagnose with logs. The app logs its weather fetches (requested ranges, what came back, fallbacks, errors) — capture them with:
